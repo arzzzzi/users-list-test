@@ -19,6 +19,16 @@ const App: React.FC = () => {
   const [emailError, setEmailError] = useState<string>('');
   const [phoneError, setPhoneError] = useState<string>('');
 
+  // useEffect(() => {
+  //   socket.on('newUser', (newUser: User) => {
+  //     setUsers(prevUsers => [...prevUsers, newUser]);
+  //     setFilteredUsers(prevUsers => [...prevUsers, newUser]);
+  //   });
+  //   return () => {
+  //     socket.off('newUser');
+  //   };
+  // }, []);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
